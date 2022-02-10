@@ -123,7 +123,7 @@ main {
 
 main .home {
   position: relative;
-  background-image: url("/dist/images/home_background.jpg");
+  background-image: url("./dist/images/home_background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -274,19 +274,19 @@ main .aboutus__content__location p, main .aboutus__content__contact p, main .abo
 }
 
 main .aboutus__content__location {
-  background-image: url("/dist/images/aboutus-location.jpg");
+  background-image: url("./dist/images/aboutus-location.jpg");
 }
 
 main .aboutus__content__contact {
-  background-image: url("/dist/images/aboutus-contact.jpg");
+  background-image: url("./dist/images/aboutus-contact.jpg");
 }
 
 main .aboutus__content__cat-boarding {
-  background-image: url("/dist/images/aboutus-cat-boarding.jpg");
+  background-image: url("./dist/images/aboutus-cat-boarding.jpg");
 }
 
 main .aboutus__content__dog-boarding {
-  background-image: url("/dist/images/aboutus-dog-boarding.jpg");
+  background-image: url("./dist/images/aboutus-dog-boarding.jpg");
 }
 
 main .gallery {
@@ -384,7 +384,7 @@ main .scrollTop--active {
 }
 
 footer {
-  background: url("/dist/images/footer-background.jpg");
+  background: url("./dist/images/footer-background.jpg");
   padding: 80px 0 50px;
 }
 

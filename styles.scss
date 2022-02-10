@@ -107,7 +107,7 @@ main {
 
 	.home {
 		position: relative;
-		background-image: url('/dist/images/home_background.jpg');
+		background-image: url('./dist/images/home_background.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -233,19 +233,19 @@ main {
 			}
 
 			&__location {
-				background-image: url('/dist/images/aboutus-location.jpg');
+				background-image: url('./dist/images/aboutus-location.jpg');
 			}
 
 			&__contact {
-				background-image: url('/dist/images/aboutus-contact.jpg');
+				background-image: url('./dist/images/aboutus-contact.jpg');
 			}
 
 			&__cat-boarding {
-				background-image: url('/dist/images/aboutus-cat-boarding.jpg');
+				background-image: url('./dist/images/aboutus-cat-boarding.jpg');
 			}
 
 			&__dog-boarding {
-				background-image: url('/dist/images/aboutus-dog-boarding.jpg');
+				background-image: url('./dist/images/aboutus-dog-boarding.jpg');
 			}
 		}
 	}
@@ -333,7 +333,7 @@ main {
 }
 
 footer {
-	background: url('/dist/images/footer-background.jpg');
+	background: url('./dist/images/footer-background.jpg');
 	padding: 80px 0 50px;
 
 	.footer__content {

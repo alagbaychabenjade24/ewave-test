@@ -13,6 +13,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	cursor: url('../dist/paw-cursor.svg'), auto;
+}
+
 .minmax {
 	width: 90%;
 	max-width: 1200px;
@@ -41,7 +45,25 @@ header {
 		}
 	}
 
-	nav {
+	.nav__large {
+		display: none;
+
+		@media (min-width: 760px) {
+			display: flex;
+
+			a {
+				font-family: $font-secondary;
+				color: white;
+				margin: 0 20px;
+
+				&:hover {
+					color: #ffbaa0;
+				}
+			}
+		}
+	}
+
+	.nav__mobile {
 		position: absolute;
 		top: 0;
 		left: -100%;
@@ -49,6 +71,7 @@ header {
 		height: 100vh;
 		width: 250px;
 		transition: 0.3s linear;
+		opacity: 0;
 
 		a {
 			font-family: $font-secondary;
@@ -67,6 +90,7 @@ header {
 
 	.nav--active {
 		left: -6%;
+		opacity: 1;
 	}
 
 	.menu {
@@ -107,7 +131,7 @@ main {
 
 	.home {
 		position: relative;
-		background-image: url('./dist/images/home_background.jpg');
+		background-image: url('../dist/images/home_background.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -115,6 +139,10 @@ main {
 		justify-content: center;
 		align-items: center;
 		padding: 150px 0 50px;
+
+		@media (min-width: 800px) {
+			background-position: auto 100%;
+		}
 
 		&__overlay {
 			position: absolute;
@@ -233,19 +261,19 @@ main {
 			}
 
 			&__location {
-				background-image: url('./dist/images/aboutus-location.jpg');
+				background-image: url('../dist/images/aboutus-location.jpg');
 			}
 
 			&__contact {
-				background-image: url('./dist/images/aboutus-contact.jpg');
+				background-image: url('../dist/images/aboutus-contact.jpg');
 			}
 
 			&__cat-boarding {
-				background-image: url('./dist/images/aboutus-cat-boarding.jpg');
+				background-image: url('../dist/images/aboutus-cat-boarding.jpg');
 			}
 
 			&__dog-boarding {
-				background-image: url('./dist/images/aboutus-dog-boarding.jpg');
+				background-image: url('../dist/images/aboutus-dog-boarding.jpg');
 			}
 		}
 	}
@@ -297,19 +325,40 @@ main {
 			}
 		}
 
-		&__carousel {
-			width: 100%;
-			max-width: 80%;
-			margin: 30px auto 50px;
+		.slide--arrows {
+			position: absolute;
+			right: 0;
+			display: flex;
+			width: max-content;
 
-			.carousel__item {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-gap: 20px;
+			button {
+				background-color: rgba(255, 255, 255, 0);
+				padding: 10px 5px;
+
+				i {
+					font-size: 20px;
+					color: #ff9b76;
+				}
+			}
+		}
+
+		&__carousel {
+			margin: 30px auto 50px;
+			width: 100%;
+			overflow: hidden;
+
+			&__items {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
 				img {
-					width: 300px;
-					height: 300px;
+					width: 100%;
+
+					@media (min-width: 880px) {
+						width: 30%;
+						margin: 0 10px;
+					}
 				}
 			}
 		}
@@ -333,7 +382,7 @@ main {
 }
 
 footer {
-	background: url('./dist/images/footer-background.jpg');
+	background: url('../dist/images/footer-background.jpg');
 	padding: 80px 0 50px;
 
 	.footer__content {

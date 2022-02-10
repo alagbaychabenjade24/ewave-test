@@ -14,6 +14,10 @@
 		/>
 
 		<link rel="stylesheet" href="css/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/cc65b87dcc.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
@@ -22,9 +26,21 @@
 				<img src="./dist/pawsitive-logo.png" alt="Pawsitive Logo" />
 			</a>
 
-			<nav>
+			<nav class="nav__large">
+				<a href="#">Home</a>
+
+				<a href="#">About</a>
+
+				<a href="#">Pet Care</a>
+
+				<a href="#">Blog</a>
+
+				<a href="#">Contact</a>
+			</nav>
+
+			<nav class="nav__mobile">
 				<a href="#">
-					<img src="./dist/pawsitive-logo.png" alt="" />
+					<img src="./dist/pawsitive-logo.png" alt="Pawsitive Logo" />
 				</a>
 
 				<a href="#">Home</a>
@@ -84,7 +100,7 @@
 							<p>
 								123 North Road, <br />
 								Green Lorem IPS <br />
-								Australia
+								Philippines
 							</p>
 						</section>
 
@@ -142,9 +158,19 @@
 						Take a closer look
 					</p>
 
+					<aside class="slide--arrows">
+						<button class="prev">
+							<i class="fa-solid fa-chevron-left"></i>
+						</button>
+
+						<button class="next">
+							<i class="fa-solid fa-chevron-right"></i>
+						</button>
+					</aside>
+
 					<section class="gallery__carousel">
-						<div class="carousel__item">
-							<!-- <img
+						<div class="gallery__carousel__items">
+							<img
 								src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=1.00xw:0.749xh;0,0.154xh&resize=980:*"
 								alt=""
 							/>
@@ -157,11 +183,11 @@
 							<img
 								src="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1200-c85.webp"
 								alt=""
-							/> -->
+							/>
 						</div>
 					</section>
 
-					<button>Load More</button>
+					<button class="load__cat__pictures">Load More</button>
 				</div>
 			</section>
 
@@ -187,7 +213,7 @@
 					<h3>About</h3>
 
 					<ul>
-						<li>PO BOX Collins Street West</li>
+						<li>123 North Road, Green Lorem IPS Philippines</li>
 
 						<li><a href="tel:+1212341234">+12 1234 1234</a></li>
 
